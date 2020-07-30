@@ -14,7 +14,7 @@ result = WebDriverWait(driver, 10).until(EC.presence_of_element_located((
     By.XPATH, '//*[@id="f1"]/div[2]/div/div/div/div[3]/div[1]/font'))).text
 ```
 
-This result will contain a string that says `Pending`, or if you're lucky, something else :).
+This result will contain a string that says `Pending`, or if you're lucky, something else :) .
 
 ## Usage
 This script requires MacOS and python3. It also requires the python3 module `selenium` to be installed.
