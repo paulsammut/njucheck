@@ -64,3 +64,21 @@ Downloading the Chrome Canary selenium driver is a bit of a pain. Use the
 [driver website](https://chromedriver.chromium.org/chromedriver-canary) and
 follow the instructions to locate the latest build and then download the
 driver. Then move the driver to the project.
+
+## Secrets
+
+This script provides a way to store your secrets in an encrypted password protected file, and then automatically decrypt and source them when you want to use this script.
+
+To make use of this, edit the `secrets` file and place your information. Then encrypt the file with a password using the following command:
+
+```bash
+openssl aes-256-cbc -in secrets -out ~/secrets_encrypted
+```
+
+Then delete the secrets file. You will now have an encrypted secrets file called ```secrets_encrypted```. 
+
+To use these secrets, source the ```decrypt_secrets.sh``` script which will prompt you for a password and source the environment variables in your current terminal session:
+
+```bash
+. ./decrypt_secrets.sh
+```
