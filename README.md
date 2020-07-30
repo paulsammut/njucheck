@@ -28,7 +28,7 @@ This script requires Google Chrome Canary `Version 86.0.4217.2 (Official Build) 
 This script requires the following environment variables to be set with your information:
 
 * `SSN`
-* `DOB` : In the format of MM/DD/YYYY
+* `DOB` : In the format of MMDDYYYY
 * `EMAIL`
 * `FIRSTNAME` : all lowercase
 * `LASTNAME` : all lowercase
