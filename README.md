@@ -7,7 +7,7 @@
 
 This script opens the form, fills everything in and then clicks the check button. 
 
-It then waits for the result by checking the presence of a hardcode div and gets its text value.
+It then waits for the result by checking the presence of a hardcoded div and gets its text value.
 
 ```python
 result = WebDriverWait(driver, 10).until(EC.presence_of_element_located((
